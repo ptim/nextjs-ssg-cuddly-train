@@ -1,6 +1,8 @@
 import { getBlogPosts } from 'app/blog/utils'
 
-export const baseUrl = 'https://portfolio-blog-starter.vercel.app'
+export const dynamic = 'force-static'
+
+export const baseUrl = 'https://ptim.github.io/nextjs-ssg-cuddly-train'
 
 export default async function sitemap() {
   let blogs = getBlogPosts().map((post) => ({
